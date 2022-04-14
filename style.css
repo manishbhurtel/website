@@ -137,6 +137,9 @@
     background-color: rgb(255, 78, 78);
     border:2px solid rgb(255, 78, 78);
 }
+body{
+    overflow-x: hidden;
+}
 
 @media (max-width:1248px){
     .centersection{
@@ -229,18 +232,52 @@
     transform: translateY(0);
 }
 @keyframes  slidein{
-    from{
+    0%{
         transform: translateY(-100%);
     }
-    to{
+    100%{
         transform: translateY(0%);
     }
+} 
+.indexpage2{
+    height:30vh;
+    width:100vw;
+    overflow-x: hidden;
+    background-color: aliceblue;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
 }
-@keyframes  fade{
-    from{
-        transform: translateY(0%);
-    }
-    to{
-        transform: translateY(100%);
-    }
+.social_container{
+    background-color: antiquewhite;
+}
+footer{
+    background-color: aquamarine;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    height: 7vh;
+}
+.header{
+    background-color: rgb(84, 255, 115);
+    height: 5vh;
+}
+.social_container{
+    height:23vh;
+}
+.social_icons{
+    height: 70%;
+}
+.social_icons ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social_icons ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.social_icons ul li a{
+    font-size: 2rem;
 }
