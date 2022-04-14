@@ -250,12 +250,9 @@ body{
     height:30vh;
     width:100vw;
     overflow-x: hidden;
-    background-color: rgb(253, 254, 255);
+    background-color: rgb(255, 255, 255);
     position: relative;
     font-family: 'Poppins', sans-serif;
-}
-.social_container{
-    /* background-color: antiquewhite; */
 }
 footer{
     background-color: rgb(88, 88, 88);
@@ -264,6 +261,9 @@ footer{
     width:100%;
     text-align: center;
     height: 7vh;
+}
+html{
+    scroll-behavior: smooth;
 }
 .header{
     height: 5vh;
@@ -279,7 +279,7 @@ h2::after{
     content: "";
     background-color: black;
     position: absolute;
-    height: 1.5px;
+    height: 3px;
     width:100%;
     bottom:0;
     left:0;
@@ -294,7 +294,7 @@ h2::after{
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 15rem;
+    gap: 10rem;
     justify-content: center;
 }
 @media (max-width:940px) {
@@ -304,7 +304,7 @@ h2::after{
 }
 @media (max-width:420px) {
     .social_icons ul{
-        gap:2rem;
+        gap:4rem;
     }
 }
 .social_icons ul li{
@@ -313,12 +313,35 @@ h2::after{
 }
 .social_icons ul li a{
     font-size: 2rem;
+    color:rgb(0, 0, 0);
 }
 footer{
     font-size: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px black;
-    color:white;
+    color:rgb(0, 0, 0);
+    background-color: rgb(201, 197, 255);
+    font-weight: 600;
+}
+.facebook:hover{
+    color:blue;
+    transition: 0.25s ease-in-out;
+}
+.playstore:hover{
+    color:rgb(91, 152, 0);
+    transition: 0.25s ease-in-out;
+}
+.location:hover{
+    transition: 0.25s ease-in-out;
+    color:red;
+}
+@media (max-width:350px) {
+    .social_icons ul{
+        gap:2rem;
+    }
+}
+.student:hover{
+    transition: 0.25s ease-in-out;
+    color:rgb(172, 31, 132);
 }
