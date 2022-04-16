@@ -3,11 +3,11 @@
     padding:0;
     box-sizing: border-box;
 }
-body{
-    overflow-x: hidden;
-}
 html{
     scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     width:5px;
@@ -16,15 +16,10 @@ html{
     background-color: red;
     border-radius: 1rem;
 }
-.indexpage{
+.servicespage{
     height:100vh;
     width:100vw;
     overflow-x: hidden;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.85)),url("images/main.jpg");
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .hamburger_menubar{
     width:3%;
@@ -103,51 +98,9 @@ html{
 .navbar_content-2{
     display: none;
 }
-
-.centersection{
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    color:rgb(207, 207, 207);
-    margin-left:10%;
-    width:55%;
-    margin-top:6%;
-}
-.second_cover .quote{
-    font-size:1.3rem;
-}
-.quote{
-    font-family: 'Poppins', sans-serif;
-}
-.quote h1{
-    margin-bottom: 0.5rem;
-}
-.quote p{
-    margin-bottom: 1.1rem;
-}
-.center_image{
-    width:20%;
-}
-.center_image img{
-    height:17rem;
-    width:14.8rem;
-}
-.youtube_link button{
-    height:3.8rem;
-    width:11rem;
-    outline: none;
-    font-size:1.4rem;
-    border-radius: 15px;
-    border:2px solid white;
-    background-color: transparent;
-    color:white;
-    cursor:pointer;
-    transition: 0.3s ease-in-out;
-}
-.youtube_link button:hover{
-    background-color: rgb(255, 78, 78);
-    border:2px solid rgb(255, 78, 78);
+.navbar_content-2{
+    animation: slidein .5s ease;
+    transform: translateY(0);
 }
 
 @media (max-width:1248px){
@@ -236,10 +189,7 @@ html{
         margin-right:10%;
     }
 }
-.navbar_content-2{
-    animation: slidein .5s ease;
-    transform: translateY(0);
-}
+
 @keyframes  slidein{
     0%{
         transform: translateY(-100%);
@@ -248,127 +198,3 @@ html{
         transform: translateY(0%);
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.indexpage2{
-    height:30vh;
-    width:100vw;
-    overflow-x: hidden;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-}
-footer{
-    background-color: rgb(88, 88, 88);
-    position: absolute;
-    bottom:0;
-    width:100%;
-    text-align: center;
-    height: 7vh;
-}
-html{
-    scroll-behavior: smooth;
-}
-.header{
-    height: 5vh;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-h2{
-    position: relative;
-}
-h2::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    height: 3px;
-    width:100%;
-    bottom:0;
-    left:0;
-}
-.social_container{
-    height:23vh;
-    position: relative;
-}
-.social_container::after{
-    position: absolute;
-    content: "";
-    background-color: black;
-    height:2px;
-    width:100%;
-    left:0;
-    bottom:0;
-}
-
-.social_icons{
-    height: 70%;
-}
-.social_icons ul{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10rem;
-    justify-content: center;
-}
-@media (max-width:940px) {
-    .social_icons ul{
-        gap:5rem;
-    }
-}
-@media (max-width:420px) {
-    .social_icons ul{
-        gap:4rem;
-    }
-}
-.social_icons ul li{
-    list-style: none;
-    cursor: pointer;
-}
-.social_icons ul li a{
-    font-size: 2rem;
-    color:rgb(0, 0, 0);
-}
-footer{
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgb(0, 0, 0);
-    /* background-color: rgb(201, 197, 255); */
-    background-color: transparent;
-    font-weight: 600;
-}
-.facebook:hover{
-    color:blue;
-    transition: 0.25s ease-in-out;
-}
-.playstore:hover{
-    color:rgb(91, 152, 0);
-    transition: 0.25s ease-in-out;
-}
-.location:hover{
-    transition: 0.25s ease-in-out;
-    color:red;
-}
-@media (max-width:350px) {
-    .social_icons ul{
-        gap:2rem;
-    }
-}
-.student:hover{
-    transition: 0.25s ease-in-out;
-    color:rgb(172, 31, 132);
-}
