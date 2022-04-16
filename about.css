@@ -385,7 +385,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-@media (max-width:1400px) {
+@media (max-width:1400px){
     .grid-images{
         grid-template-rows: repeat(15,1fr);
         grid-template-columns: repeat(16,1fr);
