@@ -198,3 +198,142 @@ body{
         transform: translateY(0%);
     }
 } 
+.service-container{
+    padding:1rem;
+}
+.servicee{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding:1rem;
+}
+.servicee img{
+    border-radius: 20px;
+    height:20rem;
+    width:30rem;
+}
+.service2{
+    flex-direction: row-reverse;
+}
+.service2 img{
+    margin-left:1rem;
+}
+.service1 img{
+    margin-right:1rem;
+}
+@media (max-width:1120px) {
+    .servicee{
+        text-align: center;
+        display: block;
+    }
+    .servicee img{
+        display: block;
+        margin: auto;
+    }
+}
+@media (max-width:560px) {
+    .servicee img{
+        height:12rem;
+        width:20rem;
+    }
+}
+@media (max-width:400px) {
+    .servicee img{
+        height:10rem;
+        width:16rem;
+    }
+}
+@media (max-width:330px) {
+    .servicee img{
+        height:8rem;
+        width:12rem;
+    }
+}
+.cards-main{
+    /* border:3px solid red; */
+    height:100vh;
+}
+.title-services{
+    text-align: center;
+    margin-top: 4%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.title-services{
+    text-decoration: underline;
+}
+.service-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10%;
+}
+.oops{
+    border-radius: 20px;
+    height:26rem;
+    width:22rem;
+    border:2px solid black;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.sir-img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-top:2.5rem;
+}
+.name-description_person h4{
+    font-size: 1.3rem;
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+}
+.social-media_icons{
+    height:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom:10px;
+    left:0;
+    width:100%;
+    font-size: 1.8rem;
+
+}
+.social-media_icons ul::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+   top:-10px;
+    left:0;
+    height:3px;
+    width:100%;
+}
+.social-media_icons ul{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width:100%;
+}
+.social-media_icons ul li a{
+    color:black;
+}
+.social-media_icons ul li{
+    list-style: none;
+}
+@media (max-width:1150px) {
+    .service-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .oops{
+        margin-bottom:2rem;
+    }
+}
+@media (max-width:370px) {
+    .oops{
+        width:17rem;
+    }
+}
